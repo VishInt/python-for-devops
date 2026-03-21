@@ -1,19 +1,23 @@
 info = {
-    "name" : "Shubham Bhaiya", #str
-    "city" : "Pune", #str
-    "qualification": "Mtech",
-    "age" : 29, # int
-    "salary": 22.5, # float
-    "married": True, # Bool
-    "favourites" : ["teaching", "movies", 18]
+    "name": "Vishal Lilhare", #str
+    "city": "Nagpur", #str
+    "qualification": "BE", #str
+    "age" : 26, #int
+    "salary": 22.5,  # float
+    "Married": False,# Boolean
+    "favourites": ["Money", "Movies", "Cricket", 18]
 }
 
-print("I live in",info["city"])
-print("I love ", info.get("favourite","Not Found"))
+print("I live in", info["city"])
+print("I love", info["favourites"])
+print("I love", info.get("favourite", "Not Found"))  # even if you missmatch any key but still you will not get any error because of .get
 
-info.update({"channel": "TrainWithShubham"})
+info.update({"channel": "TrainWithVishal"})
+print(info)
+print(dir(info))  # dir is used to know about what we can perform with the info dictioary
+print(info.get.__doc__) # to know about the particular functions detail
 
-print(dir(info))
-
+# iterate a dictionary
 for key,value in info.items():
     print(key,value)
+

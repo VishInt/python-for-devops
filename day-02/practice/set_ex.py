@@ -1,9 +1,11 @@
-info = {} # empty dict
-days = set() # empty set
-days = {"saturday","sunday","sunday","saturday"}
+info = {} # Empty Dictionary
+days = {} # Empty Set
 
-nums = [1,1,1,1,2,2,2,3,3,4,6.4,6.4,0,-1,-4]
+days = {"saturday", "saturday", "sunday", "sunday"}
+
+nums = [1, 22, 33, 44, 44.5, 44.5, 33, 22, 49]
 nums = list(set(nums))
+
 print(nums)
 
-print(type(info))
+print(info, type(info))

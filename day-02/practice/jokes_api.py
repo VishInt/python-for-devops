@@ -21,7 +21,7 @@ def get_joke(url_type,mood):
     return final_joke
 
 
-mood = input("Which joke would you like to hear? eg. (Dad, PJ)")
+mood = input("Which joke would you like to hear? eg. (Dad, PJ)").lower()
 if mood == "dad":
     url_type = dad_joke_url
 elif mood == "pj":
